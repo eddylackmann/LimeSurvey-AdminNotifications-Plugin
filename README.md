@@ -1,10 +1,9 @@
 # LimeSurvey-AdminNotifications-Plugin
 A simple LimeSurvey plugin to share announcements, messages and notifications to all survey administrators / backend users
 
-Author: Eddy Lackmann
-Email: a.eddy@hotmail.de
-Website: https://www.github.com/eddylackmann
-GitHub: https://www.github.com/eddylackmann
+Author: Eddy Lackmann  
+Email: a.eddy@hotmail.de  
+Website: https://www.github.com/eddylackmann  
 
 Licence: GPL 2.0 or later
 
