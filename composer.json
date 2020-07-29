@@ -1,0 +1,14 @@
+{
+    "name": "eddylackmann/lime-admin-notification",
+    "description": "Send Notifications to all users",
+    "type": "plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eddy Lackmann",
+            "email": "a.eddy@hotmail.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

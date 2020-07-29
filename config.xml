@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <metadata>
+        <name>LimeAdminNotifications</name>
+        <type>plugin</type>
+        <creationDate>2020-07-29</creationDate>
+        <lastUpdate>2020-07-29</lastUpdate>
+        <author>Eddy Lackmann</author>
+        <authorUrl>https://github.com/eddylackmann</authorUrl>
+        <email>a.eddy@hotmail.de</email>
+        <version>1.0.0</version>
+        <license>GNU General Public License version 2 or later</license>
+        <description><![CDATA[A plugin to send messages, announcements, news and notifications to survey administrators/backend users.]]></description>
+        <supportUrl>https://www.limesurvey.org</supportUrl>
+    </metadata>
+    <compatibility>
+        <version>4.0</version>
+ 	    <version>3.0</version>
+    </compatibility>
+    <updaters disabled="disabled">
+        
+    </updaters>
+</config>
