@@ -114,7 +114,7 @@ class LimeAdminNotifications extends PluginBase
                 'isSmallText' => false,
                 'label' => 'Notifications ' . $badge,
                 'href' => $this->api->createUrl('admin/pluginhelper/sa/fullpagewrapper/plugin/LimeAdminNotifications/method/index', []),
-                'iconClass' => 'fa fa-comments  ',
+                'iconClass' => 'fa fa-bullhorn  ',
             ];
             $aMenuItems[] = (new \LimeSurvey\Menu\MenuItem($aMenuItemUserOptions));
 
@@ -123,17 +123,17 @@ class LimeAdminNotifications extends PluginBase
                 $aMenuItemAdminOptions = [
                     'isDivider' => false,
                     'isSmallText' => false,
-                    'label' => 'Administration',
+                    'label' => gT('Administration'),
                     'href' => $this->api->createUrl('admin/pluginhelper/sa/fullpagewrapper/plugin/LimeAdminNotifications/method/admin', []),
                     'iconClass' => 'fa fa-gears',
                 ];
                 $aMenuItems[] = (new \LimeSurvey\Menu\MenuItem($aMenuItemAdminOptions));
                 $aNewMenuOptions = [
                     'isDropDown' => true,
-                    'label' => ' Admin Notifications ' . $badge,
+                    'label' => gT('Admin notifications') .' '. $badge,
                     'href' => '#',
                     'menuItems' => $aMenuItems,
-                    'iconClass' => 'fa fa-comments ' . $additionalClass,
+                    'iconClass' => 'fa fa-bullhorn ' . $additionalClass,
                 ];
             } else {
 
@@ -141,7 +141,7 @@ class LimeAdminNotifications extends PluginBase
                     'isDropDown' => false,
                     'label' => ' Admin Notifications ' . $badge,
                     'href' => $this->api->createUrl('admin/pluginhelper/sa/fullpagewrapper/plugin/LimeAdminNotifications/method/index', []),
-                    'iconClass' => 'fa fa-comments ' . $additionalClass,
+                    'iconClass' => 'fa fa-bullhorn ' . $additionalClass,
                 ];
             }
 
