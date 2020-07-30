@@ -26,7 +26,7 @@ A simple LimeSurvey plugin to share announcements, messages and notifications to
 
 <hr>
 
-![Administration page](docs/screenshots/Screenshot3.png)
+![Administration page](docs/screenshots/Screenshot2.png)
 
 <hr>
 
