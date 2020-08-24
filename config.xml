@@ -17,7 +17,11 @@
         <version>4.0</version>
  	    <version>3.0</version>
     </compatibility>
-    <updaters disabled="disabled">
-        
+    <updaters >
+        <updater>
+            <stable>1</stable>
+            <type>rest</type>
+            <source>https://comfortupdate.limesurvey.org/index.php?r=limestorerest</source>
+        </updater>
     </updaters>
 </config>
