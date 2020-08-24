@@ -147,7 +147,7 @@ class LimeAdminNotifications extends PluginBase
 
             $oNewMenu = new LSANMenuClass($aNewMenuOptions);
 
-            $oEvent->set('extraMenus', [$oNewMenu]);
+            $oEvent->append('extraMenus', [$oNewMenu]);
         }
     }
 
