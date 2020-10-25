@@ -1,4 +1,111 @@
+.panel-danger>.panel-heading {
+    color: white !important;
+}
 
-    .panel-danger > .panel-heading{
-        color:white!important;
-    }
+:root {
+    --primary-color: #61b22f;
+    --danger-color: #c44536;
+    --dark-color: #221f25;
+}
+
+body {
+    padding: 1em;
+}
+
+.notification-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.notification-primary .panel-footer {
+    background: var(--primary-color);
+}
+
+.notification-primary .btn-default {
+    background-color: transparent;
+    color: white;
+    border: white thin solid;
+}
+
+.notification-primary .btn-default:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border: white thin solid;
+    transition: 0.5s ease-in-out;
+}
+
+.notification-danger {
+    background: var(--danger-color);
+    color: white;
+}
+
+.notification-danger .panel-footer {
+    background: var(--danger-color);
+}
+
+.notification-danger .btn-default {
+    background-color: transparent;
+    color: white;
+    border: white thin solid;
+}
+
+.notification-danger .btn-default:hover {
+    background-color: white;
+    color: var(--dark-color);
+    border: white thin solid;
+    transition: 0.5s ease-in-out;
+}
+
+.notification-dark {
+    background: var(--dark-color);
+    color: white;
+}
+
+.notification-dark .panel-footer {
+    background: var(--dark-color);
+}
+
+.notification-dark .btn-default {
+    background-color: transparent;
+    color: white;
+    border: white thin solid;
+}
+
+.notification-dark .btn-default:hover {
+    background-color: white;
+    color: var(--dark-color);
+    border: white thin solid;
+    transition: 0.5s ease-in-out;
+}
+
+.notification-card {
+    -webkit-box-shadow: 3px 13px 35px -11px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 3px 13px 35px -11px rgba(0, 0, 0, 0.43);
+    box-shadow: 3px 13px 35px -11px rgba(0, 0, 0, 0.43);
+    border-radius: 0px !important;
+}
+
+.notification-card:hover {
+    transform: scale(1.02);
+    transition: ease-in-out 0.2s !important;
+}
+
+.panel-group .panel {
+    margin: 2em;
+}
+
+.notification-card-footer-left {
+    margin-top: 0.5em;
+}
+
+.notification-card-title {
+    font-size: 1.5em;
+}
+
+.notification-card-icon-section {
+    padding-right: 0.7em;
+}
+
+.notification-card-icon-section i {
+    padding-right: 0.3em;
+}

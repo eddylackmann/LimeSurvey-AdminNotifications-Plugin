@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Notifications feed view
  */
@@ -40,28 +41,42 @@ echo viewHelper::getViewTestTag('lsanIndex');
                         $panelClass = 'default';
                     }
                     ?>
-                    <div class="panel panel-<?php echo $panelClass; ?> ls-space margin bottom-25 top-15">
-                        <div class="panel-heading">
-                            <h4><?php echo $notification->title; ?></h4>
+
+                    <div class="panel notification-card notification-<?php echo $panelClass; ?>">
+                        <div class="panel-heading ">
+                            <span class="notification-card-title"><?php echo $notification->title; ?></span>
                         </div>
-                        <div class="panel-body">
-                            <?php echo $notification->message;  ?>
+                        <div class="panel-body notification-card-body">
+                            <?php echo $notification->message; ?>
                         </div>
-                        <div class="panel-footer">
+                        <div class="panel-footer notification-card-footer">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <p>
+                                <div class="col-md-9 col-xs-12 notification-card-footer-left">
+                                    <span class="notification-card-icon-section">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <?php echo $notification->username ?>
+                                    </span>
+                                    <span class="notification-card-icon-section">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <?php echo  date('Y-m-d', strtotime($notification->created)); ?>
+                                    </span>
+                                    <?php if ($notification->priority == 2) : ?>
+                                        <span class="notification-card-icon-section">
+                                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                            <?php echo  gT("Important"); ?>
+                                        </span>
+                                    <?php endif; ?>
+                                </div>
 
-                                        <span><i class="fa fa-user" aria-hidden="true"></i> <?php echo ' ' . $notification->username . ' ' ?></span>
-                                        <span><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo ' ' .  date('Y-m-d', strtotime($notification->created)) . ' '; ?></span>
-                                        <?php if ($notification->priority == 2) : ?>
-                                            &nbsp; &nbsp;<span title="<?php echo gT("High priority") ?>"><i class="fa fa-exclamation-triangle" style="color: red;" aria-hidden="false"></span></i>
-                                        <?php endif; ?>
-                                        <?php if (!$notification->isReadByUser()) : ?>
-                                            <a type="button" class="btn btn-<?php echo $panelClass ?> btn-sm pull-right " href="<?php echo \Yii::app()->createUrl("admin/pluginhelper/sa/fullpagewrapper/plugin/LimeAdminNotifications/method/markasread", ["notif_id" => $notification->id]) ?>"><?php echo gT("Mark as read") ?></a>
-                                        <?php endif; ?>
-
-                                    </p>
+                                <div class="col-md-3 col-xs-12 notification-card-footer-right">
+                                    <?php if (!$notification->isReadByUser()) : ?>
+                                        <span class="notification-card-icon-section pull-right">
+                                            <a class="btn btn-sm btn-default" href="<?php echo \Yii::app()->createUrl("admin/pluginhelper/sa/fullpagewrapper/plugin/LimeAdminNotifications/method/markasread", ["notif_id" => $notification->id]) ?>">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                                <?php echo  gT("Mark as read"); ?>
+                                            </a>
+                                        </span>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
