@@ -4,7 +4,7 @@
         <name>LimeAdminNotifications</name>
         <type>plugin</type>
         <creationDate>2020-07-29</creationDate>
-        <lastUpdate>2020-08-24</lastUpdate>
+        <lastUpdate>2024-04-01</lastUpdate>
         <author>Eddy Lackmann</author>
         <authorUrl>https://github.com/eddylackmann</authorUrl>
         <email>a.eddy@hotmail.de</email>
@@ -14,6 +14,8 @@
         <supportUrl>https://www.limesurvey.org</supportUrl>
     </metadata>
     <compatibility>
+        <version>6.0</version>
+        <version>5.0</version>
         <version>4.0</version>
  	    <version>3.0</version>
     </compatibility>
